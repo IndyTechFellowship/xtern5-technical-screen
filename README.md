@@ -1,5 +1,16 @@
 # General Rules
 
+
+### Platform
+
+- Submissions for the Software Engineering screen will be uploaded to Interviewzen
+- You DO NOT need to write your code within the Interviewzen editor
+- You MAY write your code in your own ide / editor and copy paste
+- Once the screen is opened in Interviewzen you must submit your solution for a problem before being taken to the next
+ - It is suggested that you review the questions here, and then go to the Interviewzen when you are prepared to submit your solutions
+- Within Interviewzen, you MUST use use the same email that you are using on this Technical Screen form
+
+
 ### Languages
 
 - You may use any mainstream language you desire. We will define the term "mainstream" as any language that appears in the top 50 languages on the [TIOBE index](https://www.tiobe.com/tiobe-index/). 
@@ -26,7 +37,11 @@
 - Doing so may earn your solution bonus points.
 - There are also additional ways to earn bonus points we don't outline. For example; if the problem requires storing data, try writing additional (uncalled and non-printing) functions that retrieve or display that data. Just because it doesn't execute doesn't mean we won't see it.
 
-# XternOS
+### Issues/Concerns
+
+- Have a question or concern? Open an Issue right here in Github and we'll get back to you ASAP!
+
+# OSXtern
 
 To make the lives of their Xterns easier, TechPoint has decided to commission the creation of a computer operating system, built by Xterns, for Xterns. Of course, you're on the team to help build it. In fact, you're on multiple teams. Let's tackle some of the problems this OS needs solved.
 
@@ -170,9 +185,9 @@ https://reddit.com/r/kittens/new
 
 # (3) Activity Monitor
 
-Ctrl-Alt-Delete; one of Windows' best gifts to the word. XternOS needs similar functionality; the ability to track which processes are currently running on the system.
+Ctrl-Alt-Delete; one of Windows' best gifts to the word. OSXtern needs similar functionality; the ability to track which processes are currently running on the system.
 
-When a process is launched in XternOS, it is given a unique process id and the launch is recorded in an event log. When the process exits, an event is also recorded. After closing, the process id may be reused by XternOS for future processes.
+When a process is launched in OSXtern, it is given a unique process id and the launch is recorded in an event log. When the process exits, an event is also recorded. After closing, the process id may be reused by OSXtern for future processes.
 
 Unfortunately, the person who wrote the event log logic didn't think about including whether an event is a "process start" or "process finished" event. 
 
@@ -197,13 +212,13 @@ _Given a stream of process ids associated with process start and finish actions,
 
 ### Input 1 Explanation
 
-| Step | Process ID     | What Happened? |
-| ---- | -------------- | -------------- |
-| 0    | 36             | Start          |
-| 1    | 47             | Start          |
-| 2    | 58             | Start          |
-| 3    | 47             | Finish         |
-| 4    | 36             | Finish         |
+| Step | Process ID | What Happened? |
+| ---- | ---------- | -------------- |
+| 0    | 36         | Start          |
+| 1    | 47         | Start          |
+| 2    | 58         | Start          |
+| 3    | 47         | Finish         |
+| 4    | 36         | Finish         |
 
 After parsing this input, we can determine that process `58` is still running.
 
@@ -235,4 +250,4 @@ After parsing this input, we can conclude that all processes have finished execu
 ### Tips
 
 - You may assume that there will never be more than one process still running on your system. 
-- Now, what you're thinking is "wouldn't this utility I'm writing also be a process, so there's no way my computer would only have one process running." You're not wrong, but also remember that XternOS isn't real, so it isn't bound by the traditional laws of UNIX, like more mainstream plebian operating systems.
+- Now, what you're thinking is "wouldn't this utility I'm writing also be a process, so there's no way my computer would only have one process running." You're not wrong, but also remember that OSXtern isn't real, so it isn't bound by the traditional laws of UNIX, like more mainstream plebian operating systems.
